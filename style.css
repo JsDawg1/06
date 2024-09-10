@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    margin:0;
+    padding:0px;
+    background-color: rgb(233, 235, 237);
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+}
+.main {
+    background-color: white;
+    width: 750px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;   
+}
+
+.lft {
+    width: 60%;
+    margin-left: 5%;
+    
+}
+
+.ryt {
+    width: 30%;
+    height: auto;  
+    position: relative; 
+    overflow: hidden;
+  
+}
+
+.ryt img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;  
+    top: 0;
+    left: 0;
+}
+
+.top{
+    width:100%;
+    text-align: center;
+  
+}
+
+.bottom{
+    display: flex;
+    margin-left: 1.5vw;
+ }
+.bottom img{
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 2vh;
+}
+
+.info{
+    margin-left: 2vw;
+ }
+
+.share{
+    margin-left: 15vw;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+#sharePic{
+    height: 20px;
+    position: absolute;
+    left:-10px;
+    top:10px;
+
+
+}
+
+h3{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+p{
+    
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+}
+
+#media{
+    height: 20px;
+    margin-left: 5px;
+     
+}
+
+#shareP{
+    letter-spacing: 2px;
+}
+ 
+.socialmedia{
+    display: flex;
+    background-color: rgb(81, 102, 102);
+    color:white;
+    position: absolute;
+    top:-2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    transition: 150ms transform;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: none;
+ 
+}  
+
+
+
+.socialmedia::after{
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: rgb(81, 102, 102);
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(100%);
+}
